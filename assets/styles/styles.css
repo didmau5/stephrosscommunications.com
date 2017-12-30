@@ -15,53 +15,100 @@
 .navbar{
 	background-color:white;
 	border:none;
+	margin-top:20px;
+	margin-bottom:0px;
 }
 
-.navbar-nav>.active>a{
-	background-color:#f44030 !important;
+.navbar>.form-inline>.btn{
+	color:grey;
+	background-color:white;
+	border:none;
+	font-weight: bold;
 }
+
+.navbar-nav>.disabled>a{
+	background-color:#f87060 !important;
+}
+
+.navbar>.form-inline>.disabled{
+	background-color:#f87060 !important;
+	color:white !important;
+	font-weight: normal;
+}
+/*	End Header	*/
+
 
 .jumbotron{
   background: url("../images/picture-lake.jpg"); no-repeat center center;
-  height:750px;
+  height:500px;
+}
+
+#tagline-container{
+	text-align: center;
+}
+
+#action-container{
+	text-align:center;
+}
+
+#action-container .btn{
+	border-radius:23pt;
+	color:white;
+	background-color:#f87060;
+}
+
+#action-container .btn-left{
+	background-color:#f87060;
+}
+
+#action-container .btn-right{
+	background-color:grey;
 }
 
 /*	Footer	*/
 .footer{
-	background-color:#f44030;
+	background-color:#f87060;
 	height:100px;
+}
+
+.footer .container{
+	height:100%;
 }
 
 .footer .container a{
 	float:right;
 }
 
-.fa {
-  padding: 20px;
+.footer .container .fa {
+  padding: 15px;
   font-size: 30px;
-  width: 30px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 30px 3px 3px 3px;
   border-radius: 50%;
 }
 
+.fa:hover{
+	color:#102542;
+}
+
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+  background: white;
+  color: #f87060;
 }
 
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
+  background: white;
+  color: #f87060;
 }
 
 .fa-linkedin {
-  background: #007bb5;
-  color: white;
+  background: white;
+  color: #f87060;
 }
 
 .fa-instagram {
-  background: #125688;
-  color: white;
+  background: white;
+  color: #f87060;
 }
+/*	End Footer	*/
