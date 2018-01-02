@@ -5,11 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+
  <link rel = "stylesheet" href="assets/styles/styles.css" /> 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
 </head>
 <body>
 
@@ -27,14 +26,50 @@
 		</div>
 		<div id="tagline-container" class="container">
 		  <h2>Stephanie Ann Communications</h2>      
-		  <p>Stephanie Ann Ross is an experienced communications professional specializing in copywriting, social media management, content marketing and brand journalism.</p>         
+		  <p>Stephanie Ann Ross is an experienced writer and communications professional specializing in copywriting, 
+		  social media management, content marketing and brand journalism. Her writing services include editing, blog writing, 
+		  corporate biographies, social media management, website content creation, online and print article writing, email and 
+		  newsletter content and much more for your business. Stephanie can also provide these services for individuals.</p>         
 		</div>
 		<div id="action-container" class="container">
 			<button class="btn btn-default btn-left">Request Quote</button>
 			<button class="btn btn-default btn-right">View Portfolio</button>
 		</div>
+		
+		<div id="about-container" class="container">
+		<h2>About Stephanie</br>
+		<small>Communications Specialist</small></h2> 
+			<p>With an educational background in public relations and professional experience in corporate communications, 
+			Stephanie has experience writing advertising and website copy, corporate biographies, blog posts, press releases, 
+			newspaper articles and email and newsletter content, as well as managing social media platforms for small to 
+			medium size businesses in Vancouver, BC. As an experienced communications professional with a demonstrated history 
+			of content management for a variety of industries, Stephanie specializes in corporate communications and writing in various forms.  
+			Originally from Vancouver Island, Stephanie has lived her entire life in the pacific northwest and currently calls 
+			Vancouver, BC home. As an avid traveller, Stephanie has had the pleasure of exploring multiple continents and just 
+			under a dozen countries. Stay tuned for her travel blog, chronicling her adventures.</p>
+		</div>
+		
+		<div id="portfolio-container" class="container">
+		<h2>Portfolio</br>
+		<small>	A sample of my work</small></h2>
+			Stephanie is a published author in Business in Vancouver. 
+			Click here to read “Designing a Better Tomorrow”: https://issuu.com/bivmediagroup/docs/biv_1461_acec_export_for_web/40
+			Example Press Releases and Presidential Letters
+			(Insert PDFs from Press Releases and Letters folder)
+			Case Studies and Comparisons
+			(Insert PDFs from Case Studies and Comparisons folder)</p>
+		</div>
+		
+		<div id="contact-container" class="container">
+		
+		<h2>Contact Me</br>
+		<small>	Let me tell your story</small></h2>
+		To request a quote for freelance writing services, please email Stephanie at stefross@live.ca</p>
+		</div>
 	</div>
 </div>
+
+
 <footer class="footer fixed-bottom">
   <div class="container">
 	<a href="https://www.linkedin.com/in/stephanie-ross-ba-dipl-pr-1124896b/" class="fa fa-linkedin"></a>
@@ -43,18 +78,27 @@
 	<a href="https://twitter.com/stefross20" class="fa fa-twitter"></a>
   </div>
 </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 <script>
-/*	Jumbotron Scroll	*/
-var jumboHeight = $('.jumbotron').outerHeight();
-function parallax(){
-    var scrolled = $(window).scrollTop();
-    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
-}
+	$(document).ready(function(){
+		/*	Request Quote - Open User Email Client	*/
+		$('.btn-left').on('click',function(){
+		   window.location.href = "mailto:stefross@live.ca?subject=RE:Communications Services Quote"; 
+		});
+		/*	Header Navigation	*/
+	});
 
-$(window).scroll(function(e){
-    parallax();
-});
-
+	/*	Jumbotron Scroll	*/
+	var jumboHeight = $('.jumbotron').outerHeight();
+	function parallax(){
+		var scrolled = $(window).scrollTop();
+		$('.bg').css('height', (jumboHeight-scrolled) + 'px');
+	}
+	$(window).scroll(function(e){
+		parallax();
+	});
+	
 </script>
 </html>

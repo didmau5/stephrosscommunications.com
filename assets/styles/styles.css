@@ -15,8 +15,8 @@
 .navbar{
 	background-color:white;
 	border:none;
-	margin-top:20px;
-	margin-bottom:0px;
+	padding-top:20px;
+	padding-bottom:10px;
 }
 
 .navbar>.form-inline>.btn{
@@ -43,16 +43,21 @@
   height:500px;
 }
 
-#tagline-container{
+#tagline-container, #about-container, #portfolio-container, #contact-container{
 	text-align: center;
+	font-family:Roboto Slab;
 }
 
 #action-container{
 	text-align:center;
+	margin-top:30px;
+	margin-bottom:50px;
 }
 
 #action-container .btn{
+	width:140px;
 	border-radius:23pt;
+	border:none;
 	color:white;
 	background-color:#f87060;
 }
