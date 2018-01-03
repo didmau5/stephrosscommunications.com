@@ -14,6 +14,7 @@
 
 .navbar{
 	background-color:white;
+	opacity:0.75;
 	border:none;
 	padding-top:20px;
 	padding-bottom:10px;
@@ -46,6 +47,7 @@
 #tagline-container, #about-container, #portfolio-container, #contact-container{
 	text-align: center;
 	font-family:Roboto Slab;
+	margin:50px 0 50px 0;
 }
 
 #action-container{
@@ -68,6 +70,12 @@
 
 #action-container .btn-right{
 	background-color:grey;
+}
+
+#img-headshot{
+	width:200px;
+	border-radius: 50%;
+	margin:15px;
 }
 
 /*	Footer	*/
@@ -113,6 +121,11 @@
 }
 
 .fa-instagram {
+  background: white;
+  color: #f87060;
+}
+
+.fa-pinterest {
   background: white;
   color: #f87060;
 }

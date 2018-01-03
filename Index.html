@@ -17,11 +17,12 @@
 		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
 		  <form class="form-inline">
 			<a class="btn btn-default disabled" href="#">Home</a>
-			<a class="btn btn-default" href="About.html">About</a>
-			<a class="btn btn-default" href="Portfolio.html">Portfolio</a>
-			<a class="btn btn-default" href="Contact.html">Contact</a>
+			<a id="btn-about" class="btn btn-default" href="#">About</a>
+			<a id="btn-portfolio" class="btn btn-default" href="#">Portfolio</a>
+			<a id="btn-contact" class="btn btn-default" href="#">Contact</a>
 		  </form>
 		</nav>
+		
 		<div class="jumbotron">
 		</div>
 		<div id="tagline-container" class="container">
@@ -31,13 +32,15 @@
 		  corporate biographies, social media management, website content creation, online and print article writing, email and 
 		  newsletter content and much more for your business. Stephanie can also provide these services for individuals.</p>         
 		</div>
+		
 		<div id="action-container" class="container">
-			<button class="btn btn-default btn-left">Request Quote</button>
+			<button class="btn btn-default btn-left request-quote">Request Quote</button>
 			<button class="btn btn-default btn-right">View Portfolio</button>
 		</div>
 		
 		<div id="about-container" class="container">
 		<h2>About Stephanie</br>
+		<img id="img-headshot" src="assets/images/sr_headshot.jpg"></img></br>
 		<small>Communications Specialist</small></h2> 
 			<p>With an educational background in public relations and professional experience in corporate communications, 
 			Stephanie has experience writing advertising and website copy, corporate biographies, blog posts, press releases, 
@@ -64,7 +67,7 @@
 		
 		<h2>Contact Me</br>
 		<small>	Let me tell your story</small></h2>
-		To request a quote for freelance writing services, please email Stephanie at stefross@live.ca</p>
+		To request a quote for freelance writing services, please email Stephanie at <a class="request-quote" href="#">stefross@live.ca</a></p>
 		</div>
 	</div>
 </div>
@@ -72,10 +75,11 @@
 
 <footer class="footer fixed-bottom">
   <div class="container">
-	<a href="https://www.linkedin.com/in/stephanie-ross-ba-dipl-pr-1124896b/" class="fa fa-linkedin"></a>
+	<a href="https://www.pinterest.ca/stephhaaniee/" class="fa fa-pinterest"></a>
+	<a href="https://twitter.com/stefross20" class="fa fa-twitter"></a>
 	<a href="https://www.linkedin.com/in/stephanie-ross-ba-dipl-pr-1124896b/" class="fa fa-instagram"></a>
 	<a href="https://www.facebook.com/steph.ross.7" class="fa fa-facebook"></a>
-	<a href="https://twitter.com/stefross20" class="fa fa-twitter"></a>
+	<a href="https://www.linkedin.com/in/stephanie-ross-ba-dipl-pr-1124896b/" class="fa fa-linkedin"></a>
   </div>
 </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -84,10 +88,29 @@
 <script>
 	$(document).ready(function(){
 		/*	Request Quote - Open User Email Client	*/
-		$('.btn-left').on('click',function(){
+		$('.request-quote').on('click',function(){
 		   window.location.href = "mailto:stefross@live.ca?subject=RE:Communications Services Quote"; 
 		});
 		/*	Header Navigation	*/
+		$("#btn-about").click(function() {
+			alert($("#about-container").offset().top - 130);
+			$('html, body').animate({
+			/* !!!hardcoded offset!!! */
+				scrollTop: $("#about-container").offset().top - 130
+			}, 200);
+		});
+		$("#btn-portfolio").click(function() {
+			$('html, body').animate({
+			/* !!!hardcoded offset!!! */
+				scrollTop: $("#portfolio-container").offset().top - 130
+			}, 200);
+		});
+		$("#btn-contact").click(function() {
+			$('html, body').animate({
+			/* !!!hardcoded offset!!! */
+				scrollTop: $("#contact-container").offset().top - 130
+			}, 200);
+		});
 	});
 
 	/*	Jumbotron Scroll	*/
