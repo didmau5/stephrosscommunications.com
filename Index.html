@@ -40,7 +40,7 @@
 		
 		<div id="about-container" class="container">
 		<h2>About Stephanie</br>
-		<img id="img-headshot" src="assets/images/sr_headshot.jpg"></img></br>
+		<img class="img-responsive img-circle" src="assets/images/sr_headshot.jpg"></img>
 		<small>Communications Specialist</small></h2> 
 			<p>With an educational background in public relations and professional experience in corporate communications, 
 			Stephanie has experience writing advertising and website copy, corporate biographies, blog posts, press releases, 
@@ -88,8 +88,8 @@
 <script>
 	$(document).ready(function(){
 		/*	Request Quote - Open User Email Client	*/
-		$('.request-quote').on('click',function(){
-		   window.location.href = "mailto:stefross@live.ca?subject=RE:Communications Services Quote"; 
+		$('.request-quote').click(function(){
+		   window.location.href = "mailto:stefross@live.ca?subject=RE: Stephanie Ann Communications - Services Quote Inquiry"; 
 		});
 		/*	Header Navigation	*/
 		$("#btn-about").click(function() {
