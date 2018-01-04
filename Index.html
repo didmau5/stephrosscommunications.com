@@ -4,15 +4,19 @@
   <title>Stephanie Ann Communications</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap 3 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Bootstrap 4 -->
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">-->
 
  <link rel = "stylesheet" href="assets/styles/styles.css" /> 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
 </head>
 <body>
-
 <div class="container-fluid">
+
 	<div class="container">
 		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
 		  <form class="form-inline">
@@ -63,8 +67,30 @@
 			(Insert PDFs from Case Studies and Comparisons folder)</p>
 		</div>
 		
-		<div id="contact-container" class="container">
+		<!-- Portfolio Grid -->
+		<a class="card" href="#">
+		  <img class="img-card" src="assets/images/pdf.jpg" alt="Avatar" style="width:100%">
+		  <div class="container">
+			<h4><b>John Doe</b></h4> 
+			<p>Architect & Engineer</p> 
+		  </div>
+		</a>
+		<a class="card" href="#">
+		  <img class="img-card" src="assets/images/pdf.jpg" alt="Avatar" style="width:100%">
+		  <div class="container">
+			<h4><b>John Doe</b></h4> 
+			<p>Architect & Engineer</p> 
+		  </div>
+		</a>
+		<a class="card" href="#">
+		  <img class="img-card" src="assets/images/pdf.jpg" alt="Avatar" style="width:100%">
+		  <div class="container">
+			<h4><b>John Doe</b></h4> 
+			<p>Architect & Engineer</p> 
+		  </div>
+		</a>
 		
+		<div id="contact-container" class="container">
 		<h2>Contact Me</br>
 		<small>	Let me tell your story</small></h2>
 		To request a quote for freelance writing services, please email Stephanie at <a class="request-quote" href="#">stefross@live.ca</a></p>
@@ -93,23 +119,23 @@
 		});
 		/*	Header Navigation	*/
 		$("#btn-about").click(function() {
-			alert($("#about-container").offset().top - 130);
+			//alert($("#about-container").offset().top - 130);
 			$('html, body').animate({
 			/* !!!hardcoded offset!!! */
 				scrollTop: $("#about-container").offset().top - 130
-			}, 200);
+			}, 100);
 		});
 		$("#btn-portfolio").click(function() {
 			$('html, body').animate({
 			/* !!!hardcoded offset!!! */
 				scrollTop: $("#portfolio-container").offset().top - 130
-			}, 200);
+			}, 100);
 		});
 		$("#btn-contact").click(function() {
 			$('html, body').animate({
 			/* !!!hardcoded offset!!! */
 				scrollTop: $("#contact-container").offset().top - 130
-			}, 200);
+			}, 100);
 		});
 	});
 
