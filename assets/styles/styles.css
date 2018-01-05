@@ -32,7 +32,7 @@
 .navbar .active>a{
 	background-color:#f87060 !important;
 	color:white !important;
-	font-weight: normal;
+	transition:0.25s;
 }
 /*	End Header	*/
 
@@ -163,6 +163,7 @@ body{
 .fa-facebook:hover {
   background: #3B5998;
   color: white;
+  transition:0.25s;
 }
 
 .fa-twitter {
@@ -177,6 +178,7 @@ body{
 .fa-linkedin:hover {
   background: #007bb5;
   color: white;
+  transition:0.25s;
 }
 
 .fa-instagram {
@@ -187,5 +189,10 @@ body{
 .fa-pinterest {
   background: white;
   color: #f87060;
+}
+.fa-pinterest:hover {
+  background: #cb2027;
+  color: white;
+  transition:0.25s;
 }
 /*	End Footer	*/
