@@ -25,6 +25,7 @@
 	background-color:white;
 	border:none;
 	font-weight: bold;
+	font-size: medium;
 }
 
 .navbar-nav>.disabled>a{
@@ -40,11 +41,12 @@
 
 
 .jumbotron{
-  background: url("../images/picture-lake-full.jpeg"); no-repeat center center;
-  height:500px;
+  background: url("../images/picture-lake-full.jpeg");
+  background-size: cover;
+  height:530px;
 }
 
-#tagline-container, #about-container, #portfolio-container>h2, #contact-container{
+#tagline-container, #about, #portfolio, #contact{
 	text-align: center;
 	font-family:Roboto Slab;
 	margin:50px 0 50px 0;
@@ -80,6 +82,14 @@
 
 
 /*	Portfolio Card Grid	*/
+.section-sub-header{
+	font-family:Roboto Slab;
+	font-weight: 400;
+	font-size:19.5px;
+    line-height: 1;
+    color: #777;
+}
+
 .card {
 	display:inline-block;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
@@ -112,6 +122,7 @@
 
 .img-card {
     border-radius: 5px 5px 0 0;
+	width: 100%;
 }
 /*	End Portfolio Card Grid	*/
 

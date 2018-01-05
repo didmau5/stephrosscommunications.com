@@ -14,16 +14,16 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
 </head>
-<body>
-<div class="container-fluid">
+<body  data-spy="scroll" data-target=".navbar">
+<div id="top" class="container-fluid">
 
 	<div class="container">
-		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="100">
 		  <form class="form-inline">
-			<a class="btn btn-default disabled" href="#">Home</a>
-			<a id="btn-about" class="btn btn-default" href="#">About</a>
-			<a id="btn-portfolio" class="btn btn-default" href="#">Portfolio</a>
-			<a id="btn-contact" class="btn btn-default" href="#">Contact</a>
+			<a id="btn-home" class="btn btn-default" href="#top">Home</a>
+			<a id="btn-about" class="btn btn-default" href="#about">About</a>
+			<a id="btn-portfolio" class="btn btn-default" href="#portfolio">Portfolio</a>
+			<a id="btn-contact" class="btn btn-default" href="#contact">Contact</a>
 		  </form>
 		</nav>
 		
@@ -42,10 +42,10 @@
 			<button class="btn btn-default btn-right">View Portfolio</button>
 		</div>
 		
-		<div id="about-container" class="container">
-		<h2>About Stephanie</br>
+		<div id="about" class="container">
+		<h2>About Stephanie</h2>
 		<img class="img-responsive img-circle" src="assets/images/sr_headshot.jpg"></img>
-		<small>Communications Specialist</small></h2> 
+		<p class="text-center section-sub-header">Communications Specialist</p> 
 			<p>With an educational background in public relations and professional experience in corporate communications, 
 			Stephanie has experience writing advertising and website copy, corporate biographies, blog posts, press releases, 
 			newspaper articles and email and newsletter content, as well as managing social media platforms for small to 
@@ -56,74 +56,81 @@
 			under a dozen countries. Stay tuned for her travel blog, chronicling her adventures.</p>
 		</div>
 		
-		<div id="portfolio-container" class="container">
-		<h2>Portfolio</br>
-		<small>	A sample of my work</small></h2>
+		<div id="portfolio" class="container">
+		<h2>Portfolio</h2>
+		<p class="text-center section-sub-header">A sample of my work</p>
+		<p>Stephanie is a published author in Business in Vancouver.</p>
 		
 			<div class="card-container">
-				<!-- Portfolio Grid -->
 				<a class="card" href="https://issuu.com/bivmediagroup/docs/biv_1461_acec_export_for_web/40" target="blank">
-				  <img class="img-card" src="assets/images/pdf.jpg" alt="Avatar" style="width:100%">
+				  <img class="img-card" src="assets/images/portfolio/mainstreet-station-van.jpg" alt="Portfolio Card Img">
 				  <div class="">
 					<h4><b>Business In Vancouver</b></h4> 
 					<p>Designing A Better Tomorrow</p> 
 				  </div>
 				</a>
-				<a class="card" href="#">
-				  <img class="img-card" src="assets/images/pdf.jpg" alt="Avatar" style="width:100%">
+			</div>
+			
+			<div class="card-container">
+			<p class="text-center section-sub-header">Press Releases</p>
+				<a class="card" href="assets/samples/press-releases/starbucks_pressrelease.pdf" target="blank">
+				  <img class="img-card" src="assets/images/portfolio/starbucks_pressrelease.jpg" alt="Portfolio Card Img">
 				  <div class="">
-					<h4><b>Starbucks: Press Release</b></h4> 
+					<h4><b>Starbucks: Mock Press Release</b></h4> 
 					<p>Dog Days Come Early to Canadian Starbucks</p> 
 				  </div>
 				</a>
-				<a class="card" href="#">
-				  <img class="img-card" src="assets/images/pdf.jpg" alt="Avatar" style="width:100%">
+				<a class="card" href="assets/samples/press-releases/ionis_pressrelease.pdf" target="blank">
+				  <img class="img-card" src="assets/images/portfolio/ionis_pressrelease.jpg" alt="Portfolio Card Img">
 				  <div class="">
-					<h4><b>Ionis Pharmaceuticals: Press Release</b></h4> 
+					<h4><b>Ionis Pharmaceuticals: Mock Press Release</b></h4> 
 					<p>Ionis Pharmaceuticals Partners with Johnson & Johnson to Fight Disease More Rapidly</p> 
 				  </div>
 				</a>
-				<a class="card" href="#">
-				  <img class="img-card" src="assets/images/pdf.jpg" alt="Avatar" style="width:100%">
+				<a class="card" href="assets/samples/press-releases/ionis_pressrelease.pdf" target="blank">
+				  <img class="img-card" src="assets/images/portfolio/liquidlife_pressrelease.jpg" alt="Portfolio Card Img">
 				  <div class="">
-					<h4><b>Liquid Life: Press Release</b></h4> 
+					<h4><b>Liquid Life: Mock Press Release</b></h4> 
 					<p>Liquid Life Sponsors Water Conservation and Safety program for Children.  Over 2,500 elementary school students to be educated on responsible water use this fall.</p> 
 				  </div>
 				</a>
-				<a class="card" href="#">
-				  <img class="img-card" src="assets/images/pdf.jpg" alt="Avatar" style="width:100%">
+				<a class="card" href="assets/samples/press-releases/davidsuzuki_pressrelease.pdf" target="blank">
+				  <img class="img-card" src="assets/images/portfolio/davidsuzuki_pressrelease.jpg" alt="Portfolio Card Img">
 				  <div class="">
-					<h4><b>John Doe</b></h4> 
-					<p>Architect & Engineer</p> 
+					<h4><b>David Suzuki Foundation: Mock Press Release</b></h4> 
+					<p>An Enormous Thank You On Behalf of the President of the David Suzuki Foundation</p> 
 				  </div>
 				</a>
-				<a class="card" href="#">
-				  <img class="img-card" src="assets/images/pdf.jpg" alt="Avatar" style="width:100%">
+			</div>	
+			<div class="card-container">
+			<p class="text-center section-sub-header">Case Studies</p>
+				<a class="card" href="assets/samples/case-studies/lululemon_casestudy.pdf"  target="blank">
+				  <img class="img-card" src="assets/images/portfolio/lululemon_casestudy.jpg" alt="Portfolio Card Img">
 				  <div class="">
-					<h4><b>John Doe</b></h4> 
-					<p>Architect & Engineer</p> 
+					<h4><b>Lululemon: Independent Case Study</b></h4> 
+					<p>Moving Forward with Humanity</p> 
 				  </div>
 				</a>
-				<a class="card" href="#">
-				  <img class="img-card" src="assets/images/pdf.jpg" alt="Avatar" style="width:100%">
+				<a class="card" href="assets/samples/case-studies/nhs_casestudy.pdf"  target="blank"">
+				  <img class="img-card" src="assets/images/portfolio/nhs_casestudy.jpg" alt="Portfolio Card Img">
 				  <div class="">
-					<h4><b>John Doe</b></h4> 
-					<p>Architect & Engineer</p> 
+					<h4><b>Niagra Health Systems: Independent Case Study</b></h4> 
+					<p>An Innovative Communications Strategy</p> 
 				  </div>
 				</a>
-				<a class="card" href="#">
-				  <img class="img-card" src="assets/images/pdf.jpg" alt="Avatar" style="width:100%">
+				<a class="card" href="assets/samples/case-studies/olympics_casestudy.pdf" target="blank">
+				  <img class="img-card" src="assets/images/portfolio/olympics_casestudy.jpg" alt="Portfolio Card Img">
 				  <div class="">
-					<h4><b>John Doe</b></h4> 
-					<p>Architect & Engineer</p> 
+					<h4><b>Olympics: Independent Case Study</b></h4> 
+					<p>Comparison of Commuications Support for the Olympics: April, 1908 to July, 2012</p> 
 				  </div>
 				</a>
 			</div>
 		</div>
 		
-		<div id="contact-container" class="container">
-		<h2>Contact Me</br>
-		<small>	Let me tell your story</small></h2>
+		<div id="contact" class="container">
+		<h2>Contact Me</h2>
+		<p class="text-center section-sub-header">Let me tell your story</p>
 		To request a quote for freelance writing services, please email Stephanie at <a class="request-quote" href="#">stefross@live.ca</a></p>
 		</div>
 	</div>
@@ -147,26 +154,6 @@
 		/*	Request Quote - Open User Email Client	*/
 		$('.request-quote').click(function(){
 		   window.location.href = "mailto:stefross@live.ca?subject=RE: Stephanie Ann Communications - Services Quote Inquiry"; 
-		});
-		/*	Header Navigation	*/
-		$("#btn-about").click(function() {
-			//alert($("#about-container").offset().top - 130);
-			$('html, body').animate({
-			/* !!!hardcoded offset!!! */
-				scrollTop: $("#about-container").offset().top - 130
-			}, 100);
-		});
-		$("#btn-portfolio").click(function() {
-			$('html, body').animate({
-			/* !!!hardcoded offset!!! */
-				scrollTop: $("#portfolio-container").offset().top - 130
-			}, 100);
-		});
-		$("#btn-contact").click(function() {
-			$('html, body').animate({
-			/* !!!hardcoded offset!!! */
-				scrollTop: $("#contact-container").offset().top - 130
-			}, 100);
 		});
 	});
 
