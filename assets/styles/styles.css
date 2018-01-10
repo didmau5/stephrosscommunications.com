@@ -44,17 +44,24 @@ body{
   background: url("../images/picture-lake-full.jpeg");
   background-size: cover;
   height:530px;
+  margin-bottom:0;
 }
 
-#tagline-container, #about, #portfolio, #contact{
+#about, #portfolio, #contact{
 	text-align: center;
 	font-family:Roboto Slab;
-	margin:50px 0 50px 0;
+	margin:100px 0 100px 0;
+}
+
+#tagline-container{
+	text-align: center;
+	font-family:Roboto Slab;
+	margin:0;
 }
 
 #action-container{
 	text-align:center;
-	margin-top:30px;
+	margin-top:15px;
 	margin-bottom:50px;
 }
 
@@ -90,6 +97,10 @@ body{
     color: #777;
 }
 
+.card-container{
+	margin-bottom:100px;
+}
+
 .card {
 	display:inline-block;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
@@ -123,6 +134,7 @@ body{
 .img-card {
     border-radius: 5px 5px 0 0;
 	width: 100%;
+	height:180px;
 }
 /*	End Portfolio Card Grid	*/
 
@@ -170,6 +182,11 @@ body{
   background: white;
   color: #f87060;
 }
+.fa-twitter:hover {
+  background: #55ACEE;
+  color: white;
+  transition:0.25s;
+}
 
 .fa-linkedin {
   background: white;
@@ -185,6 +202,11 @@ body{
   background: white;
   color: #f87060;
 }
+.fa-instagram:hover {
+  background: #125688;
+  color: white;
+  transition:0.25s;
+}
 
 .fa-pinterest {
   background: white;
@@ -194,5 +216,20 @@ body{
   background: #cb2027;
   color: white;
   transition:0.25s;
+}
+
+.dev-tagline{
+	float: left;
+}
+
+.dev-tagline a{
+	text-decoration:none;
+	color:white;
+	font-family:Roboto Slab;
+	font-size: smaller;
+}
+.dev-tagline a:hover{
+	text-decoration:none;
+	color:white;
 }
 /*	End Footer	*/
