@@ -50,7 +50,6 @@ body{
 #about, #portfolio, #contact{
 	text-align: center;
 	font-family:Roboto Slab;
-	margin:100px 0 100px 0;
 }
 
 #tagline-container{
@@ -98,7 +97,7 @@ body{
 }
 
 .card-container{
-	margin-bottom:100px;
+	margin-bottom:50px;
 }
 
 .card {
