@@ -30,7 +30,7 @@
 
 <div class="container-fluid">
 	<div class="container">
-		<nav class="nav navbar" data-spy="affix" data-offset-top="80">
+		<nav class="nav navbar" data-spy="affix">
 			<ul class="nav nav-pills">
 				<li class="nav-item active">
 					<a class="nav-link" href="#top">Home</a>
@@ -201,5 +201,11 @@
 		parallax();
 	});
 	
+	/*  ScrollSpy fix.... still does not highlight property tab */
+	$('.navbar li a').click(function(event) {
+	    event.preventDefault();
+	    $($(this).attr('href'))[0].scrollIntoView();
+	    scrollBy(0, -80);
+	});
 </script>
 </html>
