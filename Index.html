@@ -33,16 +33,16 @@
 		<nav class="nav navbar" data-spy="affix">
 			<ul class="nav nav-pills">
 				<li class="nav-item active">
-					<a class="nav-link" href="#top">Home</a>
+					<a class="nav-link page-link" href="#top">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#about">About</a>
+					<a class="nav-link page-link" href="#about">About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#portfolio">Portfolio</a>
+					<a class="nav-link page-link" href="#portfolio">Portfolio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
+					<a class="nav-link page-link" href="#contact">Contact</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="https://stefross.wordpress.com" target="blank">Travel Blog</a>
@@ -202,7 +202,8 @@
 	});
 	
 	/*  ScrollSpy fix  */
-	$('.navbar li a').click(function(event) {
+	//improve this selector to only target in-page hrefs
+	$('.navbar li a.page-link').click(function(event) {
 	    event.preventDefault();
 	    $($(this).attr('href'))[0].scrollIntoView();
 	    scrollBy(0, -80);
